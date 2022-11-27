@@ -18,6 +18,7 @@ Debes planificar siempre la estructura de Directorios en GNU/Linux (Filesystem H
 El arquitecto debe tener una planificacion BASE y luego dependiendo de la necesidad lo ajusta
 
 Un ejemplo BASE, con valores muy generosos::
+
 	/		10G
 	Swap	2G
 	home	5G
