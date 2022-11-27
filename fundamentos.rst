@@ -30,6 +30,7 @@ Cuando se este instalando una distribución de GNU/Linux ya debe tener claro cua
 Es altamente recomendable utilizar LVM (Logical Volume Manager)
 
 Un LVM siempre el Disco se debe::
+
 	Particionar.
 	Crear los VG
 	Crear los LV
