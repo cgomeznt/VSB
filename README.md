@@ -40,3 +40,6 @@ Application Web Apache
 
 # Nodejs
 Nodejs desarrollo
+
+* [Instalar Nodejs en Debian](instalarnodejs.rst)
+
