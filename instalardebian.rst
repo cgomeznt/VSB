@@ -5,7 +5,7 @@ Buscamos::
 
 	# apt-cache search apache2
 	
-Instalamos:
+Instalamos::
 	
 	# apt-get install apache2
 
@@ -13,7 +13,7 @@ Iniciamos el servicio.::
 
 	# systemctl start apache2
 
-Verificamos que el puerto 80 este iniciado:
+Verificamos que el puerto 80 este iniciado::
 
 	# netstat -natp
 
