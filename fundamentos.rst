@@ -62,7 +62,7 @@ Luego que instalemos una distribucion de GNU/Linux, debemos entonarla, es decir,
 		cat /etc/resolv.conf
 	hacemos un ping a google para estar seguros que tenemos salida al internet
 		ping google.com
-	apt	-	sources.list	-	agregar el repositorio: deb http://deb.debian.org/debian buster main contrib non-free
+	apt	-	sources.list	-	agregar el repositorio: deb http://deb.debian.org/debian bullseye main contrib non-free
 	apt-get update	-	busca los indices del repositorio que se agrego y lo descarga a local
 	apt-get upgrade	-	Busca todos los paquetes obsoletos y los actualiza con la ayuda del nuevo repositorio
 	Instalamos las utilidades de admon y/o diagnostico net-tools bindutils
