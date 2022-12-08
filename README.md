@@ -25,6 +25,7 @@ Base de Datos Relacional Postgresql
 # Apache 
 Application Web Apache
 
+* [Configurar un virtualhost novus](virtualhostnovus.rst)
 * [Instalar Apache en Debian](instalardebian.rst)
 * [Instalar Apache en CentOS](instalar.rst)
 * [Compilar Instalar Apache en CentOS 7](CompilarInstallCentos7.rst)
