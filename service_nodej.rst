@@ -28,6 +28,8 @@ Este es el script::
           # node app.js
           npm run dev >> /var/log/node.log &
           #$(netstat -tulpn | grep 5001 | awk '{ print $7}' | awk -F"/" '{print $1}') > nodejs.pid
+          sleep 5
+          netstat -tulpn | grep 5001 | awk '{ print $7}' | awk -F"/" '{print $1}' > ./nodejs.pid
   }
   function stop {
           kill -9 $(netstat -tulpn | grep 5001 | awk '{ print $7}' | awk -F"/" '{print $1}' )
@@ -44,6 +46,7 @@ Este es el script::
           exit 2
           ;;
   esac
+
 
 Script para crear el servicio
 ================================
