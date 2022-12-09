@@ -76,3 +76,13 @@ Este es el script de services que utilizara el script anterior para que sea como
 
   [Install]
   WantedBy=multi-user.target
+  
+  
+  
+Recargamos el nuevo servicio::
+
+  systemctl daemon-reload
+
+Lo habilitamos::
+
+  systemctl enable node
