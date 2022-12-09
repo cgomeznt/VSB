@@ -14,12 +14,13 @@ Este es el script::
 
   #!/bin/bash
   function start {
-          cd /opt/middlenaiguata
-          (/usr/bin/npm start >> /var/log/node.log &)
-          $(netstat -tulpn | grep 3000 | awk '{ print $7}' | awk -F"/" '{print $1}') > nodejs.pid
+          cd /home/soporte/api_imprenta_novus/
+          # (/usr/bin/npm start >> /var/log/node.log &)
+          npm run dev
+          $(netstat -tulpn | grep 5001 | awk '{ print $7}' | awk -F"/" '{print $1}') > nodejs.pid
   }
   function stop {
-          kill -9 $(netstat -tulpn | grep 3000 | awk '{ print $7}' | awk -F"/" '{print $1}' )
+          kill -9 $(netstat -tulpn | grep 5001 | awk '{ print $7}' | awk -F"/" '{print $1}' )
   }
   case "$1" in
       start|stop|restart)
@@ -51,8 +52,8 @@ Este es el script de services que utilizara el script anterior para que sea como
   User=root
   Group=root
 
-WorkingDirectory=/opt/middlenaiguata
-Environment="NODE_PID=/opt/middlenaiguata/nodejs.pid"
+WorkingDirectory=/home/soporte/api_imprenta_novus/
+Environment="NODE_PID=/home/soporte/api_imprenta_novus/nodejs.pid"
 
 ExecStart=/usr/local/bin/nodejs.sh start
 ExecStop=/usr/local/bin/nodejs.sh stop
