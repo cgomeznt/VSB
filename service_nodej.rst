@@ -13,10 +13,17 @@ Este es el script::
   # cat nodejs.sh
 
   #!/bin/bash
+  
+  if [ $(id -u) -eq 0 ] ; then
+    echo "\nWARNING...!!! Este script debe ser ejecutado con el usuario soporte"
+    echo " "
+    exit 1
+  fi
+  
   function start {
           cd /home/soporte/api_imprenta_novus/
           # (/usr/bin/npm start >> /var/log/node.log &)
-          npm run dev
+          (/usr/bin/npm run dev >> /var/log/node.log &)
           $(netstat -tulpn | grep 5001 | awk '{ print $7}' | awk -F"/" '{print $1}') > nodejs.pid
   }
   function stop {
