@@ -11,20 +11,23 @@ Debe crear el script, en esta ruta::
 Este es el script::
 
   # cat nodejs.sh
-
-  #!/bin/bash
   
+  #!/bin/bash
+
   if [ $(id -u) -eq 0 ] ; then
-    echo "\nWARNING...!!! Este script debe ser ejecutado con el usuario soporte"
-    echo " "
+    echo -e "\nWARNING...!!! Este script debe ser ejecutado con el usuario soporte\n"
     exit 1
   fi
-  
+
+
+
   function start {
           cd /home/soporte/api_imprenta_novus/
           # (/usr/bin/npm start >> /var/log/node.log &)
-          (/usr/bin/npm run dev >> /var/log/node.log &)
-          $(netstat -tulpn | grep 5001 | awk '{ print $7}' | awk -F"/" '{print $1}') > nodejs.pid
+          #(/usr/bin/npm run dev >> /var/log/node.log &)
+          # node app.js
+          npm run dev >> /var/log/node.log &
+          #$(netstat -tulpn | grep 5001 | awk '{ print $7}' | awk -F"/" '{print $1}') > nodejs.pid
   }
   function stop {
           kill -9 $(netstat -tulpn | grep 5001 | awk '{ print $7}' | awk -F"/" '{print $1}' )
@@ -59,14 +62,14 @@ Este es el script de services que utilizara el script anterior para que sea como
   User=soporte
   Group=soporte
 
-WorkingDirectory=/home/soporte/api_imprenta_novus/
-Environment="NODE_PID=/home/soporte/api_imprenta_novus/nodejs.pid"
+  WorkingDirectory=/home/soporte/api_imprenta_novus/
+  Environment="NODE_PID=/home/soporte/api_imprenta_novus/nodejs.pid"
 
-ExecStart=/usr/local/bin/nodejs.sh start
-ExecStop=/usr/local/bin/nodejs.sh stop
+  ExecStart=/usr/local/bin/nodejs.sh start
+  ExecStop=/usr/local/bin/nodejs.sh stop
 
-RestartSec=10
-Restart=always
+  RestartSec=10
+  Restart=always
 
-[Install]
-WantedBy=multi-user.target
+  [Install]
+  WantedBy=multi-user.target
