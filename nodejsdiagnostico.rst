@@ -61,4 +61,19 @@ Ponemos a correr la aplicación::
 	
 
 
+Instalaciones
+------------------
 
+npm cache clean -f
+npm install npm@latest -g
+npm install -g n
+n latest
+node -v 
+npm -v
+
+  script:
+    - npm config set proxy http://10.132.0.10:8080
+    - npm config set strict-ssl false
+    - git config --global http.proxy http://10.132.0.10:8080
+    - npm install -g npm
+    - npm install
