@@ -23,6 +23,9 @@ Base de Datos Relacional Postgresql
 * [Parametros de configuracion segun el system](parametroconf.rst)
 * [Cambiar la ubicación de la carpeta de datos de PostgreSQL](cambiarubicacion.rst)
 * [Backup and Restore](backuprestore.rst)
+* [Accesos y listen](accesoslisten.rst)
+
+
 
 
 # Apache 
