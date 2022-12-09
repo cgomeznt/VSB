@@ -47,4 +47,5 @@ Application Web Apache
 Nodejs desarrollo
 
 * [Instalar Nodejs en Debian](instalarnodejs.rst)
+* [Nodejs diagnostico](nodejsdiagnostico.rst)
 
