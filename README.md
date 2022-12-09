@@ -5,7 +5,7 @@ Fundamentos
 
 # Servicio para Nodej
 Service o demonio para Nodej
-* [Scripts para crear el servicio de Nodej](service_nodej)
+* [Scripts para crear el servicio de Nodej](service_nodej.rst)
 
 # LVM
 Fundamentos LVM
