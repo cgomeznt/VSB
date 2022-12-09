@@ -49,8 +49,8 @@ Este es el script de services que utilizara el script anterior para que sea como
   [Service]
   Type=forking
 
-  User=root
-  Group=root
+  User=soporte
+  Group=soporte
 
 WorkingDirectory=/home/soporte/api_imprenta_novus/
 Environment="NODE_PID=/home/soporte/api_imprenta_novus/nodejs.pid"
