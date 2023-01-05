@@ -68,8 +68,8 @@ Este es el script de services que utilizara el script anterior para que sea como
   WorkingDirectory=/home/soporte/api_imprenta_novus/
   Environment="NODE_PID=/home/soporte/api_imprenta_novus/nodejs.pid"
 
-  ExecStart=/usr/local/bin/nodejs.sh start
-  ExecStop=/usr/local/bin/nodejs.sh stop
+  ExecStart=/bin/bash /usr/local/bin/nodejs.sh start
+  ExecStop=/bin/bash /usr/local/bin/nodejs.sh stop
 
   RestartSec=10
   Restart=always
