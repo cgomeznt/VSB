@@ -50,10 +50,10 @@ Application Web Apache
 # Postfix
 Postfix correo electronico unicamente para envio de correos desde la APP
 
-* [Instalar Postfix solo para el envio SMTP CentOS7](installonlysmtpCentOS7.rst)
-* [Instalar Mailx para hacer pruebas con Postfix](mailx.rst)
-* [Como configurar Postfix SMTP relay](relayhost.rst)
-* [Nodej test Nodemailer y SMTP](NodeJrelayhost.rst)
+* [Instalar Postfix solo para el envio SMTP CentOS7](https://github.com/cgomeznt/Postfix/blob/master/guia/installonlysmtpCentOS7.rst)
+* [Instalar Mailx para hacer pruebas con Postfix](https://github.com/cgomeznt/Postfix/blob/master/guia/mailx.rst)
+* [Como configurar Postfix SMTP relay](https://github.com/cgomeznt/Postfix/blob/master/guia/relayhost.rst)
+* [Nodej test Nodemailer y SMTP](https://github.com/cgomeznt/Postfix/blob/master/guia/NodeJrelayhost.rst)
 
 
 # Nodejs
