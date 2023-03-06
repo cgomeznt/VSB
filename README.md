@@ -34,14 +34,6 @@ Application Web Apache
 * [Configurar un virtualhost novus](virtualhostnovus.rst)
 * [Instalar Apache en Debian](instalardebian.rst)
 
-# Postfix
-Postfix correo electronico unicamente para envio de correos desde la APP
-
-* [Instalar Postfix solo para el envio SMTP CentOS7](installonlysmtpCentOS7.rst)
-* [Instalar Mailx para hacer pruebas con Postfix](mailx.rst)
-* [Como configurar Postfix SMTP relay](relayhost.rst)
-* [Nodej test Nodemailer y SMTP](NodeJrelayhost.rst)
-
 * [Instalar Apache en CentOS](instalar.rst)
 * [Compilar Instalar Apache en CentOS 7](CompilarInstallCentos7.rst)
 * [Configurar un virtualhost en Debian](virtualhostdebian.rst)
@@ -54,6 +46,15 @@ Postfix correo electronico unicamente para envio de correos desde la APP
 * [Algunos ejemplos de Virtual Host](Ejemplos_VirtualHost.rst)
 * [Convertid formato rst to HTML](rsttohtml.rst)
 * [Run Apache non-root](non-root.rst)
+
+# Postfix
+Postfix correo electronico unicamente para envio de correos desde la APP
+
+* [Instalar Postfix solo para el envio SMTP CentOS7](installonlysmtpCentOS7.rst)
+* [Instalar Mailx para hacer pruebas con Postfix](mailx.rst)
+* [Como configurar Postfix SMTP relay](relayhost.rst)
+* [Nodej test Nodemailer y SMTP](NodeJrelayhost.rst)
+
 
 # Nodejs
 Nodejs desarrollo
